@@ -1,3 +1,4 @@
+import { title } from "process";
 import { fileURLToPath } from "url";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -17,7 +18,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +32,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, World");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -48,8 +49,11 @@ function exercise_02() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+  let myAge = 48;
+  const myName = "James";
 
-  const placeholder = "Delete this line and code here";
+  console.log(myAge);
+  console.log(myName);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +80,15 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+ let sum = num1 + num2;
+ let subtract = num1 - num2;
+ let multiply = num1 * num2;
+ let divide = num1 / num2;
+
+ console.log(sum)
+ console.log(subtract)
+ console.log(multiply)
+ console.log(divide)
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,8 +107,15 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x;
 
+  x = 45;
+
+  x = "What's up";
+  console.log(typeof x);
+
+  x = true;
+  console.log(typeof x);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -113,7 +132,10 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+
+  isAvailable = !isAvailable;
+  console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +160,16 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let message = "Javascript is no joke!"
+
+let upper = message.toUpperCase();
+console.log(upper);
+
+let lower = message.toLowerCase();
+console.log(lower);
+
+let length = message.length;
+console.log(length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +196,13 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+ let name = "James";
+
+ let greeting = `Hello, ${name}! Welcome to JavaScript!`;
+
+ console.log(greeting);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,7 +223,11 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let nothing;
+console.log(nothing);
+
+let blank = null;
+console.log(blank);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -206,7 +247,13 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+ let book = {
+  title: "In Too Deep",
+  author: "Michael Henry Brown and Paul Aaron",
+  publishedYear: 1999
+ };
+
+ console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -226,7 +273,15 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+ let book = {
+  title: "In Too Deep",
+  author: "Michael Henry Brown and Paul Aaron",
+  publishedYear: 1999
+ };
+
+ console.log(book.title);
+
+ console.log(book["author"]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -248,8 +303,17 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+   let book = {
+  title: "In Too Deep",
+  author: "Michael Henry Brown and Paul Aaron",
+  publishedYear: 1999
+ };
 
+ book.publishedYear = 1995;
+
+ book["genre"] = "Based on a true story";
+
+ console.log(book);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -267,7 +331,16 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+ let book = {
+  title: "In Too Deep",
+  author: "Michael Henry Brown and Paul Aaron",
+  publishedYear: 1999
+ };
+ console.log(book);
+
+ delete book.author;
+
+ console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -298,7 +371,11 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+
+  copy.name ="Bob";
+
+  console.log(original.name);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -318,7 +395,8 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -340,7 +418,16 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+
+  let year = currentDate.getFullYear();
+  let month = currentDate.getMonth() + 1;
+  let day = currentDate.getDate();
+
+  console.log(year);
+  console.log(month);
+  console.log(day);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -365,7 +452,11 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+ let birthday = new Date(1977, 1, 1);
+
+ const birthdayString = birthday.toDateString();
+
+ console.log(birthdayString);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -392,7 +483,14 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+const currentDate = new Date();
+
+const timeDifference = currentDate - pastDate;
+
+const daysDifference = timeDifference / (1000 * 60 * 60 * 24);
+
+console.log(Math.ceil(daysDifference));
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -423,7 +521,16 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+// 1. Using + operator
+let plusMessage = "With Plus Operator: " + msgPart1 + " " + msgPart2 + "!";
+
+console.log(plusMessage);
+
+// 2. Using a template literal
+let templateMessage = `With Template Literal: ${msgPart1} ${msgPart2}!`;
+
+console.log(templateMessage);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -455,8 +562,20 @@ function exercise_19() {
     
   */
   // CODE IN THE OPEN LINES BELOW
+// 1. Check for "JavaScript"
+console.log(text.includes("JavaScript"));
 
-  const placeholder = "Delete this line and code here";
+// 2. Check for "Python"
+console.log(text.includes("Python"));
+
+// 3. Check for lowercase "javascript"
+console.log(text.includes("javascript"));
+
+/*
+includes() is case‑sensitive.
+"JavaScript" matches the exact capitalization in the text,
+but "javascript" does not, so it returns false.
+*/
 
   // CODE IN THE OPEN LINES ABOVE
 }
